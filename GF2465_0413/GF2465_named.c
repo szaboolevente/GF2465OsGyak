@@ -14,7 +14,7 @@ int main()
 
 	char inBuffer[MSIZE];
 	int pid, fileDesc;
-	char input[] = "Bettes Benjamin";
+	char input[] = "Szabo Levente";
 	char * fifo = "/tmp/ig1tym";
 
 	mkfifo(fifo, 0666);
