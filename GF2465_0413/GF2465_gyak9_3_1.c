@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {
     if(argc != 2)
     {
-        printf("Hasznalat: ./IG1TYM_gyak9_3_1 PID\n");
+        printf("Hasznalat: ./GF2465_gyak9_3_1 PID\n");
         return 1;
     }
 
