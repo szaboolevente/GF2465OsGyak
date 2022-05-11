@@ -26,12 +26,8 @@ int main() {
         perror("Szulo processz - varakozasi hiba ");
     }
 
-    printf("A gyerek process lefutott.\n");
+    printf("A gyerek processz lefutott.\n");
     printf("A szulo process ID: %d\n", parent_pid);
-    
-    return 0;
-} lefutott.\n");
-    printf("A szulo process ID: %d\n", parent_pid);
-    
+
     return 0;
 }
