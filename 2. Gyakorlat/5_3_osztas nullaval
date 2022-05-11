@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+    int oszto = 0;
+    if (oszto == 0) {
+        exit(2);
+    } 
+    printf("Az eredmeny: %f\n", 5.0/oszto);
+
+    return 0;
+}
