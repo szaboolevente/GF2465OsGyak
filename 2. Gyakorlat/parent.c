@@ -1,3 +1,4 @@
+#include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -17,17 +18,17 @@ int main() {
         printf("A gyerek process ID: %d\n", child_pid);
         status = execl("./child", "./child", (char *)0);
 		if (status == -1)
-		{	perror("Hiba tortent a gyerek processz futtatasakor.\n");
+		{	perror("Hiba tortent a gyerek futtatasakor.\n");
 			exit (1);
 		}        
     }
 	printf("A szulo processz (%d) var a gyerek processz (%d) befejezesere.\n", parent_pid, child_pid);
 	if (pid != wait(&status)) {
-        perror("Szulo processz - varakozasi hiba ");
+        perror(" Szulo - varakozasi hiba ");
     }
 
-    printf("A gyerek processz lefutott.\n");
+    printf("A gyerek process befejezodott.\n");
     printf("A szulo process ID: %d\n", parent_pid);
-
+    
     return 0;
 }
