@@ -11,24 +11,24 @@ int main() {
     int pid, status;
 
     parent_pid = getpid();
-    printf("A szülő process ID: %d\n", parent_pid);
+    printf("A szulo process ID: %d\n", parent_pid);
 
     if((pid = fork())==0) {
         child_pid = getpid();
         printf("A gyerek process ID: %d\n", child_pid);
         status = execlp("ls", "ls", "-l", (char *)0);
 		if (status == -1)
-		{	perror("Hiba történt a gyerek futtatáskor.\n");
+		{	perror("Hiba tortent a gyerek futtatasakor.\n");
 			exit (1);
 		}        
     }
-	printf("A szülő (%d) vár a gyermek (%d) befejeződésére.\n", parent_pid, child_pid);
+	printf("A szulo processz (%d) var a gyerek processz (%d) befejezesere.\n", parent_pid, child_pid);
 	if (pid != wait(&status)) {
-        perror(" Szülő - várakozási hiba ");
+        perror(" Szulo - varakozasi hiba ");
     }
 
-    printf("A gyerek processnek vége.\n");
-    printf("A szülő process ID: %d\n", parent_pid);
+    printf("A gyerek processnek vege.\n");
+    printf("A szulo process ID: %d\n", parent_pid);
     
     return 0;
 }
