@@ -2,7 +2,7 @@
 
 int main() {
     for (int i = 0 ; i < 10 ; i++) {
-        printf("Dobra Gábor - XQBTIW\n");
+        printf("Szabo Levente - GF2465\n");
     }
     return 0;
 }
