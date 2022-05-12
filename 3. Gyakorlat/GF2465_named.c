@@ -42,7 +42,7 @@ int main()
         printf("Gyerek process.\n");
 
         char output_string[80];
-        strcpy(output_string, "Dobra Gabor XQBTIW\n");
+        strcpy(output_string, "Szabo Levente GF2465\n");
 
         pipe = open(fifoname, O_WRONLY);
         write(pipe, output_string, strlen(output_string));
