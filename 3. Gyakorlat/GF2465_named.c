@@ -10,7 +10,7 @@
 int main()
 {
 
-    char* fifoname = "./XQBTIW";
+    char* fifoname = "./GF2465";
     mkfifo(fifoname, 0666);
 
     int pipe;
